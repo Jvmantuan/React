@@ -1,18 +1,11 @@
 'use strict'
 
-import React, { Component } from 'react'
-import Square from './square'
+import React from 'react'
 
-class App extends Component {
-  render () {
-    return (
-      <div className='container'>
-        {['red', 'green', 'blue'].map((square) => (
-          <Square key={square} color={square} />
-        ))}
-      </div>
-    )
+const App = React.createClass({
+  render: function () {
+    return <h1>You're a Hack3r</h1>
   }
-}
+})
 
 export default App
